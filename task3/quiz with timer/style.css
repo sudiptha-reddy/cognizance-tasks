@@ -1,0 +1,31 @@
+
+body {
+color: #ffffff;
+color: #73a0a3;
+}
+#timerBox {
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+}
+.quizBox {
+  background-color: white;
+  height:fit-content; 
+  text-align: center;
+  width: 50%;
+  padding: 50px;
+
+  overflow: auto;
+  margin: 0 auto;
+  margin-top: 10%;
+  border: 2px solid lightblue;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px lightslategray, 0 6px 20px 0 black;
+}
+.btn {
+  margin-top: 20px;
+}
+.hiddenBox {
+  display: none;
+}
+
