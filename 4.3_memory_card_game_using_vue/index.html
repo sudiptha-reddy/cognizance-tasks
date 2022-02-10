@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <div class="d-flex flex-row justify-content-center py-3">
+            <div class="turns p-3"><span class="btn btn-info">Turns : <span class="badge" :class="finish ? 'badge-success' : 'badge-light'">{{turns}}</span> </span></div>
+            <div class="totalTime p-3"><span class="btn btn-info">Total Time : <span class="badge" :class="finish ? 'badge-success' : 'badge-light'">{{min}} : {{sec}}</span></span></div>
+        </div>
+
+    <div id="app">
+        <div class="row">
+            <div class="col-md-6 col-lg-6 col-xl-5 mx-auto">
+                <div class="row justify-content-md-center">
+                    <div v-for="card in memoryCards" class="col-auto mb-3 flip-container"
+                        :class="{ 'flipped': card.isFlipped }" @click="flipCard(card)">
+                        <div class="memorycard">
+                            <div class="front border rounded shadow"><img width="100" height="150"
+                                    src="/assets/images/memorycard/pattern3.jpeg"></div>
+                            <div class="back rounded border"><img width="100" height="150"
+                                    :src="'/assets/images/memorycard/'+card.img"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
