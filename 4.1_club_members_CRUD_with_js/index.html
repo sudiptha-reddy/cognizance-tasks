@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crud operation in javascript</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: #b2d0d8;">
+
+
+    <h1>
+        Open Source club
+    </h1>
+    <h3>
+        Welcome to Amrita University's Open source club! 
+        <br>
+        Stick around, contribute, and learn something new!
+    </h3>
+    <br>
+    
+    <h2>
+        Hola memobers of the club!
+        <br>
+        
+        As you are probably aware our club is working on launching a new website which includes the information about its members.
+    </h2>
+    
+    <table>
+        <tr>
+            <td>
+                <!--HTML form for crud operation-->
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="Name">Name</label>
+                        <input type="text" name="Name" id="Name" >
+                    </div>
+                    <div>
+                        <label for="Age">Age</label>
+                        <input type="number" name="Age" id="Age" >
+                    </div>
+                    <div>
+                        <label for="Contact">Contact</label>
+                        <input type="text" name="Contact" id="Contact">
+                    </div>
+                    <div>
+                        <label for="Skills">Skills</label>
+                        <input type="text" name="Skills" id="Skills">
+                    </div>
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="Memberslist">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Contact</th>
+                            <th>Skills</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <h2>
+        Contact
+    </h2>
+    <h3>
+        You can contact a member of the community via email Provided Below, or directly reaching out. Contact us directly with this email opensourceamritachennai@gmail.com or
+
+        <pre>
+        Jonnie - Faculty Coordinator joooon@ce-kgr.org 
+        Zayn - Student Program Coordinator zaynn@gmail.com     
+        Kimmie - Organizing Committee kimmie@gmail.com
+        </pre>
+    </h3>
+<h2>
+    About us
+</h2>
+    <h3>
+        With the mission to promote, support, and create open-source software, the Open Source Club strives to create a powerful developer community at Amrita University to accelerate and advance the worldwide open-source community.
+    </h3>
+
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+
+</html>
